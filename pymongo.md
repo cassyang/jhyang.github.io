@@ -84,5 +84,31 @@ print(x.inserted_ids)
 
 修改数据
 ---
-..
+- 使用update_one()可以修改一条文件记录，第一个参数是查询条件，第二个参数是要修改的内容。
+```python
+myquery = {"name" : 1}
+newvalues = {"name" : 10}
+mycol.update_one(myquery, newvalues)
+```
+如果有多个条件满足的话，则只更新第一条。
 
+- update_many()可以修改全匹配的记录。参数与update_one()一样
+
+数据排序
+---
+- sort()方法可以指定升序/降序。第一个参数为要排序的字段，第二个参数指定排序规则，1为升序，-1为降序。默认为升序。
+    ``mycol.find().sort("name", -1)``
+
+删除数据
+---
+- delete_one()可以删除一个文档，第一个参数为查询对象，指定要删除哪些参数。
+- delete_many()可以删除多个文档，参数为查询对象，与delete_one()类似。
+- delete_many({}) 则会删除集合中的所有文档。
+- drop() 可以删除整个collection
+```python
+a = mycol.delete_one({"name" : 1})
+b = mycol.delete_many({"name" : {"$regex" : "^F"}})
+x = mycol.delete_many({})
+print(x.deleted_count) # 输出删除文档是数量
+mycol.drop() # 成功返回true，如果删除失败(集合不存在)返回false
+```
