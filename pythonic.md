@@ -1,6 +1,6 @@
-## ÈÃ´úÂë¸ü¼Ópythonic
+## è®©ä»£ç æ›´åŠ pythonic
 
-Êä³ö×Ö·û´®
+è¾“å‡ºå­—ç¬¦ä¸²
 ---
 ```python
 name = 'jhyang'
@@ -19,7 +19,7 @@ data = {'day': 'Sunday', 'office': 'Home', 'other': 'UNUSED'}
 print "On {day} I was working in my {office}!".format(**data)
 ```
 
-ºÏ²¢×Öµä
+åˆå¹¶å­—å…¸
 ---
 ```python
 route = {'id': 271, 'title': 'Fast apps'}                                                                                     
@@ -42,7 +42,7 @@ m2 = dict(dict(query, **post), **route)
 print m2
 ```
 
-±äÁ¿½»»»
+å˜é‡äº¤æ¢
 ---
 ```python
 a = 1                                                                                                                         
@@ -57,7 +57,7 @@ a, b = b, a
 print "a={}, b={}".format(a, b)
 ```
 
-ÍÆµ¼Ê½
+æ¨å¯¼å¼
 ---
 ```python
 num_list1 = [num for num in xrange(1,6)]                                                                                      
