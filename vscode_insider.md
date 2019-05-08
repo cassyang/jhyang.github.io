@@ -1,12 +1,12 @@
-1. Ê×ÏÈÔÚ¹ÙÍøÏÂÔØ[vscode insider°æ](https://code.visualstudio.com/insiders/)
-2. ÔÚÀ©Õ¹ÖĞ°²×°Remote-SSH
-3. °´ÕÕ[¹Ù·½Á÷³Ì](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)ÅäÖÃ±¾»úSSH£¬µ«ÎÒÔÚ¹«Ë¾µÄµçÄÔÉÏÃ»ÓĞÅäÖÃ³É¹¦£¬ÓĞ³É¹¦µÄÍ¬Ñ§¿ÉÒÔ¸æËßÎÒ¡£°´ÕÕ²»³£¹æµÄÁ÷³Ì×Ô¼ºÏÂÔØÒ»¸öSSHÈ»ºóÅäÖÃ[ÏÂÔØµØÖ·](https://me.jinchuang.org/sofw/OpenSSHWindows53p1-2.rar)£¬È»ºóÔÚ»·¾³±äÁ¿ÖĞÌí¼Ó``°²×°Â·¾¶/bin``
-4. ´ò¿ªvscode insider°æ£¬°´×¡``ctrl+shift+P``È»ºóÊäÈëSSH£¬µã»÷Remote-SSH:Open Configuration File£¬Ëæºó´ò¿ªÅäÖÃÎÄ¼ş£¬ÔÚÆäÖĞÊäÈë£º
+1. é¦–å…ˆåœ¨å®˜ç½‘ä¸‹è½½[vscode insiderç‰ˆ](https://code.visualstudio.com/insiders/)
+2. åœ¨æ‰©å±•ä¸­å®‰è£…Remote-SSH
+3. æŒ‰ç…§[å®˜æ–¹æµç¨‹](https://code.visualstudio.com/docs/remote/troubleshooting#_installing-a-supported-ssh-client)é…ç½®æœ¬æœºSSHï¼Œä½†æˆ‘åœ¨å…¬å¸çš„ç”µè„‘ä¸Šæ²¡æœ‰é…ç½®æˆåŠŸï¼Œæœ‰æˆåŠŸçš„åŒå­¦å¯ä»¥å‘Šè¯‰æˆ‘ã€‚æŒ‰ç…§ä¸å¸¸è§„çš„æµç¨‹è‡ªå·±ä¸‹è½½ä¸€ä¸ªSSHç„¶åé…ç½®[ä¸‹è½½åœ°å€](https://me.jinchuang.org/sofw/OpenSSHWindows53p1-2.rar)ï¼Œç„¶ååœ¨ç¯å¢ƒå˜é‡ä¸­æ·»åŠ ``å®‰è£…è·¯å¾„/bin``
+4. æ‰“å¼€vscode insiderç‰ˆï¼ŒæŒ‰ä½``ctrl+shift+P``ç„¶åè¾“å…¥SSHï¼Œç‚¹å‡»Remote-SSH:Open Configuration Fileï¼Œéšåæ‰“å¼€é…ç½®æ–‡ä»¶ï¼Œåœ¨å…¶ä¸­è¾“å…¥ï¼š
 	```
 	# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
-	Host -i C:\\Users\\gzyangjianhui\\.ssh\\id_rsa gzyangjianhui@192.168.42.196 -p32200 -o IdentitiesOnly=yes -o StrictHostKeyChecking=no
+	Host -i your_psw_pos_in_windows your_user_name@your_id_address -pç«¯å£å· -o IdentitiesOnly=yes -o StrictHostKeyChecking=no
 	```
-	¶ÔÓ¦µÄ¼ÇµÃ¸ÄÒ»ÏÂ£¬id_rsaÊÇ×Ô¼ºµÄµØÖ·
-5. °´×¡``ctrl+shift+P``È»ºóÊäÈëSSH£¬µã»÷Remote-SSH:Connect To Host£¬Ñ¡Ôñ×Ô¼º¸Õ²ÅµÄÅäÖÃ£¬¼´¿ÉÁ¬½Ó¡£
-6. Èç¹ûÏÖÓĞÁ¬½Ó¹ı³ÌÖĞ¿ÉÄÜ´æÔÚÈÃÄãÊäÈë¶à´ÎÃÜÂë»òÊäÈë¶à´ÎyesµÄÇé¿ö£¬¼ÇµÃÌí¼Ó-o StrictHostKeyChecking=no¼´¿É¡£
-7. Èç¹ûÔÚTEMRMINAL´¦ÌáÊ¾``Connected to SSH Host - Please do not close this terminal`` ÄÇÃ´´ó¹¦¸æ³É£¬Ñ¡Ôñ´ò¿ªÒ»¸öÎÄ¼ş¼Ğ¿ªÊ¼¿ìÀÖµÄvscode remote¿ª·¢°É£¡
+	å¯¹åº”çš„è®°å¾—æ”¹ä¸€ä¸‹ï¼Œid_rsaæ˜¯è‡ªå·±çš„åœ°å€
+5. æŒ‰ä½``ctrl+shift+P``ç„¶åè¾“å…¥SSHï¼Œç‚¹å‡»Remote-SSH:Connect To Hostï¼Œé€‰æ‹©è‡ªå·±åˆšæ‰çš„é…ç½®ï¼Œå³å¯è¿æ¥ã€‚
+6. å¦‚æœç°æœ‰è¿æ¥è¿‡ç¨‹ä¸­å¯èƒ½å­˜åœ¨è®©ä½ è¾“å…¥å¤šæ¬¡å¯†ç æˆ–è¾“å…¥å¤šæ¬¡yesçš„æƒ…å†µï¼Œè®°å¾—æ·»åŠ -o StrictHostKeyChecking=noå³å¯ã€‚
+7. å¦‚æœåœ¨TEMRMINALå¤„æç¤º``Connected to SSH Host - Please do not close this terminal`` é‚£ä¹ˆå¤§åŠŸå‘Šæˆï¼Œé€‰æ‹©æ‰“å¼€ä¸€ä¸ªæ–‡ä»¶å¤¹å¼€å§‹å¿«ä¹çš„vscode remoteå¼€å‘å§ï¼
